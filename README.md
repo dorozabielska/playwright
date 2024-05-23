@@ -16,9 +16,14 @@ This is my learning project for automation with Playwright and Node.js. If you l
 ## Table of Contents
 - [Playwright Project with MyMentor ChatGPT 4o](#Playwright-Project-with-MyMentor-ChatGPT-4o)
 - [Description](#description)
+- [Testing Website](#Testing-website)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+
+## Testing Website
+
+I decided to use [WebdriverUniversity.com](https://www.webdriveruniversity.com/).
 
 ## Installation
 
