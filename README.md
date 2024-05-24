@@ -36,7 +36,11 @@ cd playwright
 ```
 npm install
 ```
-
+4. Install Playwright
+```
+ npx playwright install
+ ```
+ 
 ## Usage
 
 To run the tests, use the following command:
