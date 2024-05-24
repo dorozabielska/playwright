@@ -11,7 +11,7 @@ test('navigate to home page', async ({ page }) => {
 test('click on contact us link and verify new page', async ({ page }) => {
     const homePage = new HomePage(page);
     await homePage.navigate();
-    await homePage.clickContactUs();
-    await expect(page).toHaveURL(`${baseUrl}Contact-Us/contactus.html`);
+    const newPage = await homePage.clickContactUs();
+    await expect(newPage).toHaveURL(`${baseUrl}Contact-Us/contactus.html`);
     // Add additional assertions as needed
 });
