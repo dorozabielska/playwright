@@ -13,6 +13,8 @@ class HomePage {
 
     async clickContactUs() {
         await this.contactUsLink.click();
+        // Wait for the new page to load
+        await this.page.waitForURL(`${baseUrl}Contact-Us/contactus.html`);
     }
 
     async clickLoginPortal() {
