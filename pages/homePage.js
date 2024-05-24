@@ -1,3 +1,4 @@
+const { baseUrl } = require('../data/config');
 class HomePage {
     constructor(page) {
         this.page = page;
