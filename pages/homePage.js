@@ -1,4 +1,5 @@
 const { baseUrl } = require('../data/config');
+
 class HomePage {
     constructor(page) {
         this.page = page;
@@ -12,12 +13,16 @@ class HomePage {
     }
 
     async clickContactUs() {
-        await this.contactUsLink.click();
-        // Wait for the new page to load
-        await this.page.waitForURL(`${baseUrl}Contact-Us/contactus.html`);
+        const [newPage] = await Promise.all([
+            this.page.waitForEvent('popup'),
+            this.contactUsLink.click()
+        ]);
+        await newPage.waitForLoadState();
+        return newPage;
     }
 
     async clickLoginPortal() {
+        await this.loginPortalLink.waitFor({ state: 'visible', timeout: 10000 });
         await this.loginPortalLink.click();
     }
 
