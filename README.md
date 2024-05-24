@@ -8,7 +8,7 @@ This is my learning project for automation with Playwright and Node.js. If you l
 >
 > A few things for you to know:
 >
-> 1. I have macOS, no further updates are available for my computer.
+> 1. I have macOS (version reducted).
 > 2. I have a GitHub account, and I want to publish all my tests there.
 > 3. I don't have a code editor at the moment. Please suggest one that works on Mac and supports GitHub Copilot.
 > 4. I don't have a website to test. Please choose one that was created by the QA community for automation training purposes.
