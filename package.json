@@ -10,8 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "@playwright/test": "^1.44.1",
+    "eslint": "^9.5.0",
+    "lru-cache": "^10.2.2",
+    "npm-check-updates": "^16.14.20",
     "playwright": "^1.44.1"
   },
-  "devDependencies": {},
   "description": ""
 }
